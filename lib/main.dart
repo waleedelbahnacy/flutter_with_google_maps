@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_with_google_maps/widgets/google_map_view.dart';
+import 'package:flutter_with_google_maps/views/google_map_view.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {
@@ -11,7 +11,11 @@ class RouteTrackApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: GoogleMapView(),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        resizeToAvoidBottomInset: false,
+        body: SafeArea(child: GoogleMapView()),
+        ),
     );
   }
 }

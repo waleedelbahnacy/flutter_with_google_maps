@@ -4,7 +4,7 @@ import 'package:flutter_with_google_maps/models/place_autocomplete_model/place_a
 import 'package:flutter_with_google_maps/models/place_details_model/place_details_model.dart';
 import 'package:http/http.dart' as http;
 
-class GoogleMapsPlaceService 
+class PlacesService 
 {
 final String baseUrl = 'https://maps.googleapis.com/maps/api/place';
   final String apiKey = 'AIzaSyC87Tt3tfO6aYids0BZStXXbrdAy05jQCI';
